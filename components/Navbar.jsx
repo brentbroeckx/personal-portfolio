@@ -5,7 +5,7 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-800 dark:bg-gray-800 px-10 pt-3 sticky top-0 z-30">
+        <nav className="bg-gray-800 dark:bg-gray-800 px-10 w-full pt-3 sticky top-0 z-30">
             <div className="flex flex-wrap text-white justify-between bg-gray-800 items-center mx-auto">
                 <a href="https://flowbite.com" className="flex items-center">
                     <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
@@ -38,7 +38,7 @@ function Navbar() {
                     </li>
                     <li>
                     <a
-                        href="#"
+                        href="#about"
                         className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >
                         About
@@ -46,7 +46,15 @@ function Navbar() {
                     </li>
                     <li>
                     <a
-                        href="#"
+                        href="#skills"
+                        className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >
+                        Skills
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        href="#projects"
                         className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >
                         Projects
@@ -54,7 +62,7 @@ function Navbar() {
                     </li>
                     <li>
                     <a
-                        href="#"
+                        href="#traineeship"
                         className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >
                         Traineeship
@@ -62,7 +70,7 @@ function Navbar() {
                     </li>
                     <li>
                     <a
-                        href="#"
+                        href="#contact"
                         className="block py-2 pr-4 pl-3  hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                         Contact

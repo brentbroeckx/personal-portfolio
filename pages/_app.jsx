@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Navbar />
-      <Component className="scroll-smooth" {...pageProps} />
+      <Component {...pageProps} />
     </>
   );
 }

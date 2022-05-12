@@ -4,6 +4,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -17,4 +18,64 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.circle-color {
+  stroke: lightgrey;
+}
+
+.circle-fill {
+  stroke: purple;
+  stroke-dashoffset: 240;
+}
+
+.fill-02 {
+  stroke-dasharray: 280;
+}
+
+.fill-03 {
+  stroke-dasharray: 300;
+}
+
+.fill-04 {
+  stroke-dasharray: 320;
+}
+
+.fill-05 {
+  stroke-dasharray: 340;
+}
+
+.fill-06 {
+  stroke-dasharray: 360;
+}
+
+.fill-07 {
+  stroke-dasharray: 380;
+}
+
+.fill-08 {
+  stroke-dasharray: 400;
+}
+
+.fill-09 {
+  stroke-dasharray: 420;
+}
+
+.fill-10 {
+  stroke-dasharray: 440;
+}
+
+.fill-11 {
+  stroke-dasharray: 460;
+}
+
+.fill-12 {
+  stroke-dasharray: 480;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }

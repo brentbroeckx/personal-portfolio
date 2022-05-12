@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import About from '../components/About'
 import Introduction from '../components/Introduction'
+import Skills from '../components/Skills'
+
 
 export default function Home() {
   return (
@@ -11,9 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-gray-800'>
+      <main className='bg-gray-800 container px-10'>
         <Introduction />
         <About />
+        <Skills />
       </main>
     </div>
   )
