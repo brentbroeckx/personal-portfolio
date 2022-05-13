@@ -94,6 +94,7 @@ a {
 img {
   /* width: 200px;
   height: 200px; */
+  filter: brightness(0.3);
 }
 
 #card2 {
