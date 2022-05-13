@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import About from '../components/About'
 import Introduction from '../components/Introduction'
+import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Introduction />
         <About />
         <Skills />
+        <Projects />
       </main>
     </div>
   )
