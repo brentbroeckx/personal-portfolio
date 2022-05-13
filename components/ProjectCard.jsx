@@ -18,7 +18,7 @@ function ProjectCard() {
                 </div>
                 <img className='w-80 h-60 z-10 object-cover' src="/assets/img/project-placeholder.png"/>
             </div>
-            <div className="back face bg-black text-white p-5">
+            <div className="back face z-20 bg-black text-white p-5">
                 <div className='flex flex-col space-y-4'>
                     <div className='flex flex-col'>
                         <span className='text-base'>Project 4.0</span>
