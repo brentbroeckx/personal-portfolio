@@ -5,7 +5,7 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-800 dark:bg-gray-800 px-10 w-full pt-3 sticky top-0 z-30">
+        <nav className="bg-gray-800 dark:bg-gray-800 px-10 w-screen pt-3 sticky top-0 z-30">
             <div className="flex flex-wrap text-white justify-between bg-gray-800 items-center mx-auto">
                 <a href="https://flowbite.com" className="flex items-center">
                     <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">

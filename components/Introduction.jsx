@@ -9,9 +9,9 @@ function Introduction() {
         <div className='mt-5'>
             <Image className='pt-5' layout='fixed' src={placeholder} width={300} height={350} alt="Picture of Brent" />
         </div>
-        <div className='flex flex-col items-center mt-4'>
+        <div className='flex flex-col items-center text-center mt-4'>
             <span className='text-2xl text-gray-300'>WELCOME</span>
-            <span className='text-4xl font-bold mt-3'>I'm Brent Broeckx</span>
+            <span className='text-3xl font-bold mt-3'>I'm Brent Broeckx</span>
             <span className='text-sm text-gray-300'>Student - Application Development</span>
             <button className="bg-blue-400 hover:bg-blue-600 text-gray-800 font-bold py-2 px-4 mt-4 rounded inline-flex items-center">
                 <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
