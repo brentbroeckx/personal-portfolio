@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Study() {
+function Study(props) {
   return (
     <div className='flex items-center space-x-4'>
       <div className='rounded-full w-16 h-16 flex items-center justify-center bg-gradient-to-t from-blue-600 to-cyan-400'>
@@ -9,10 +9,10 @@ function Study() {
       </svg>
       </div>
       <div className='flex flex-col'>
-          <span className='text-base'>Thomas More - Geel</span>
+          <span className='text-base'>{props.school}</span>
           <div className='flex flex-col text-sm'>
-            <span>Bachelor Application Development</span>
-            <span className='text-gray-400' >2019 - 2022</span>
+            <span>{props.degree}</span>
+            <span className='text-gray-400' >{props.date}</span>
           </div>
       </div>
     </div>
