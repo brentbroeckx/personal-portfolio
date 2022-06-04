@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Project 4.0",
+        "location": "Thomas More - Geel",
+        "summary": "Lorem ipsum lorem ipsum",
+        "image": "/assets/img/project-placeholder.png",
+        "backgroundInfo": "Project 4.0 is een projectvak waar we in team een applicatie uitbouwen voor het bedrijf Cipal. Deze applicatie zal de sociale media (influencers) gebruiken om de lokale stadsmarketing te verbeteren.",
+        "what": "In dit project maakten we een webapplicatie (Angular) die door de steden gebruikt zal worden en een mobiele applicatie (Flutter) die door influencers gebruikt zal worden. Deze zullen ondersteund worden met een backend in PHP. We gebruikten de SCRUM methode om de opdrachten goed te kunnen verdelen onder de teamleden zodat we goede applicaties afleveren. Dit project bevat 3 fases. In de eerste fase was ik de groepsleider en in de laatste fase was ik de Frontend Developer.",
+        "how": "We werken in 3 verschillende fases: voorbereidingsfase, conceptfase en realistatiefase. Deze fases zorgen ervoor dat we alle nodige informatie hebben en we daarna zullen programmeren.",
+        "voorbereidingsFase": "Allereerst hebben we de voorbereidingsfase. In deze fase gingen we allerlei informatie opzoeken over onze opdrachtgever, hielden we enkele meetings met de opdrachtgever om te horen wat voor project we gingen maken en stelden we vragen zodat we zo duidelijk mogelijk alles konden uitwerken. Dit documenteerde we en konden we gebruiken in de volgende fases. Verder stelden we een PDS (Product Decomposition Structure) en Plan van Aanpak op. Tijdens deze fase hebben we ook aan teambuilding gedaan waarbij we een Escape Room deden om elkaar beter te leren kennen en begrijpen.",
+        "conceptFase": "In de conceptfase gingen we alles dieper onderzoeken waarbij we concepten gingen maken en kijken wat we allemaal moesten voorzien (beveiliging, frameworks, ...). Eerst onderzochten we welke frameworks we zouden gebruiken voor onze web - en mobiele applicatie. Als we dit onderzocht gedaan hadden konden we gaan kijken naar hoe onze applicatie eruit zal gaan zien. In de conceptfase maakten we nog geen gebruik van Figma maar hebben we foto's gebruikt om aan te tonen hoe onze applicaties eruit zouden zien. Ook kregen we enkele designs van Cipal die ons opweg hielpen. Na het design hadden we beslist om GitHub te gebruiken en Azure als hosting. De database waarmee we gingen werken was PostgreSQL omdat deze de beste voordelen biedt voor deze applicaties. Als laatste gingen we onderzoeken welke mogelijke beveiligingen we moesten inbouwen om aanvallen tegen te gaan.",
+        "realisatiefase": "In de realisatiefase hebben we onze informatie en concepten verwerkt in een echt project. Eerst hebben we Github opgezet en maakten we een Angular, Flutter en PHP project aan. Deze projecten importeerden we in Github en konden we met versiebeheer beginnen. Vervolgens gingen we in Trello allerlei items aanmaken en gaven we iedereen een rol. Mijn rol in de realisatiefase was Frontend Developer. Ik zou mee zorgen voor de frontend van de applicatie in zowel het Angular als in het Flutter project. Als alle items aangemaakt waren konden we deze sorten op de meest belangrijkste. Vervolgens nam iedereen een item en begonnen we met werken. Tijdens deze fase heb ik goed leren communiceren. Omdat ik de meeste ervaring had met Frontend heb ik zelf aan de frontend gewerkt maar stond ik ook steeds klaar wanneer iemand hulp nodig had in 1 van de frontend applicaties. Daarom was het zeer belangrijk dat ik met iedereen bleef communiceren over hoe alles ging en hoe ver iedereen stond waardoor ik kon kijken naar wat er moest gebeuren of waar ik kon helpen. Flexibel zijn is was dus zeer belangrijk omdat ik regelmatig tussen de 2 frontend applicaties wisselde.",
+        "projectPictures": [""]
+    },
+    {
+        "id": 2,
+        "title": "C# 3D Game Developer Course",
+        "location": "Thomas More - Geel",
+        "summary": "Lorem ipsum lorem ipsum",
+        "image": "/assets/img/creativity.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Twitter Clone",
+        "location": "Privé",
+        "summary": "Lorem ipsum lorem ipsum",
+        "image": "/assets/img/creativity.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Perseelbeheer",
+        "location": "Privé",
+        "summary": "Lorem ipsum lorem ipsum",
+        "image": "/assets/img/time-management.jpg"
+    }
+]

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function About() {
   return (
-    <section className='text-white flex flex-col h-screen' id='about'>
+    <section className='text-white flex flex-col h-screen justify-center items-center' id='about'>
       <div className='flex flex-col justify-center items-center'>
           <span className='text-3xl text-center font-bold border-white w-max border-b-2'>Over mij</span>
           <div id='about-text' className='mt-3 text-center space-y-4'>
