@@ -5,7 +5,7 @@ import Profilepicture from '../public/assets/img/foto-brent.jpg'
 
 function Introduction() {
   return (
-    <section id='introduction' className='h-screen  text-white flex flex-col items-center'>
+    <section id='introduction' className='h-[85vh] pt-8 text-white flex flex-col items-center'>
         <div className='mt-5'>
             <Image className='pt-5 object-cover' layout='fixed' src={Profilepicture} width={300} height={350} alt="Picture of Brent" />
         </div>
@@ -17,7 +17,7 @@ function Introduction() {
 
             
         </div>
-        <div className='h-full mt-10'>
+        <div className='h-full mt-10 flex items-center'>
             <Link href={'#about'}>
             <svg className='animate-bounce h-6 w-6' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />

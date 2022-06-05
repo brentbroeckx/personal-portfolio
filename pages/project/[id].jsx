@@ -10,8 +10,6 @@ console.log("testing")
     const router = useRouter();
     const query = router.query;
 
-    console.log(query)
-
     const project = projects.find((project) => project.id == query.id)
 
 

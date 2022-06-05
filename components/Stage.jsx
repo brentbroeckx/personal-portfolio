@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 
 function Stage() {
   return (
-    <section className='text-white  flex flex-col mt-10 h-max space-y-8' id='stage'>
+    <section className='text-white  flex flex-col mt-10 h-max space-y-8 pb-5' id='stage'>
         <span className='text-4xl font-bold mx-auto w-max'>Stage</span>
         <div id='stage-showcase' className='flex flex-wrap justify-center space-y-4'>
           <h3 className='text-lg text-center' >Healthcare Web Application Development in Angular for E.care</h3>

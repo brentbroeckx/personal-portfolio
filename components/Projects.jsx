@@ -11,11 +11,6 @@ function Projects() {
             {projects.map((project) => {
               return <ProjectCard key={project.id} project={project}/>
             })}
-
-            {/* <ProjectCard name="Project 4.0" place="Thomas More - Geel" details="Lorem ipsum lorem ipsum" image="/assets/img/project-placeholder.png"/>
-            <ProjectCard name="C# 3D Game Developer Course" place="Thomas More - Geel" details="Lorem ipsum lorem ipsum" image="/assets/img/creativity.jpg" />
-            <ProjectCard name="Twitter Clone" place="Privé" details="Lorem ipsum lorem ipsum" image="/assets/img/creativity.jpg" />
-            <ProjectCard name="Perseelbeheer" place="Privé" details="Lorem ipsum lorem ipsum" image="/assets/img/time-management.jpg" /> */}
         </div>
     
     </section>
