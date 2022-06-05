@@ -4,9 +4,9 @@ import projects from './projects.json'
 
 function Projects() {
   return (
-    <section className='text-white  flex flex-col mt-10 h-max space-y-8' id='projects'>
-        <span className='text-4xl font-bold mx-auto w-max'>Projects</span>
-        <div id='project-showcase' className='flex flex-wrap justify-center space-y-4'>
+    <section className='text-white flex flex-col mt-10 h-max space-y-8' id='projects'>
+        <span className='text-4xl font-bold mx-auto w-max'>Projecten</span>
+        <div id='project-showcase' className='gap-4 grid grid-cols-1 mx-auto md:grid-cols-2'>
 
             {projects.map((project) => {
               return <ProjectCard key={project.id} project={project}/>

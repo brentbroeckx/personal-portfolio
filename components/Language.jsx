@@ -2,7 +2,7 @@ import React from 'react'
 
 function Language(props) {
   return (
-      <div>
+      <div className='md:w-[60%] md:mx-auto'>
         <div className="flex justify-between mb-1" style={{width: props.value + "%"}}>
             <span className="text-base font-medium text-white">{props.language}</span>
             <span className="text-sm font-medium text-white">{props.progress}</span>

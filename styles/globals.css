@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  scroll-padding: 75px;
+  scroll-padding: 65px;
 }
 
 html,
@@ -98,7 +98,7 @@ a {
 .project {
   /* width: 200px;
   height: 200px; */
-  filter: brightness(0.3);
+  filter: brightness(0.4);
 }
 
 #card2 {
@@ -126,4 +126,12 @@ a {
   transform: rotateY(180deg);
   box-sizing: border-box;
   opacity: .7;
+}
+
+.storytell {
+  max-width: max-content;
+}
+
+.margin-0-imp {
+  margin: 0 !important;
 }

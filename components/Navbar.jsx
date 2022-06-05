@@ -7,26 +7,28 @@ function Navbar() {
 
 
     return (
-		<nav className="bg-gray-700 shadow-lg sticky-top">
+		<nav className="bg-gray-700 min-h-[6vh] shadow-lg sticky-top">
 			<div className="max-w-6xl mx-auto px-4">
 				<div className="flex justify-between md:block">
 					<div className="flex space-x-7 md:justify-between">
 						<div>
-							<a href="#" className="flex items-center py-4 px-2">
+							<a href="/" className="flex items-center py-4 px-2">
 								<span className="font-semibold text-white text-lg">Brent Broeckx</span>
 							</a>
 						</div>
-						<div className="hidden md:flex items-center space-x-1 text-white">
+						<div className="hidden md:flex items-center space-x-1 text-white h-[6vh]">
                             <NavLink href="/" exact className="py-4 px-2 font-semibold hover:text-orange-400">Home</NavLink>
-                            <NavLink href="#about" className="py-4 px-2 font-semibold hover:text-orange-400">Over mij</NavLink>
-                            <NavLink href="#skills" className="py-4 px-2 font-semibold hover:text-orange-400">Skills</NavLink>
-                            <NavLink href="#projects" className="py-4 px-2 font-semibold hover:text-orange-400">Projecten</NavLink>
-                            <NavLink href="#stage" className="py-4 px-2 font-semibold hover:text-orange-400">Stage</NavLink>
+                            <NavLink href="/#about" className="py-4 px-2 font-semibold hover:text-orange-400">Over mij</NavLink>
+                            <NavLink href="/#skills" className="py-4 px-2 font-semibold hover:text-orange-400">Skills</NavLink>
+                            <NavLink href="/#projects" className="py-4 px-2 font-semibold hover:text-orange-400">Projecten</NavLink>
+                            <NavLink href="/#stage" className="py-4 px-2 font-semibold hover:text-orange-400">Stage</NavLink>
 						</div>
                         <div className="hidden md:flex items-center">
-                            <button className="bg-orange-400 hover:bg-orange-500 rounded-lg p-2 font-bold">
-                                Contact
-                            </button>
+                            <a href="#footer">
+                                <button className="text-black bg-orange-400 hover:bg-orange-500 rounded-lg p-2 font-bold ml-6">
+                                            Contact
+                                </button>
+                            </a>
                         </div>
 					</div>
 					<div className="md:hidden flex items-center">

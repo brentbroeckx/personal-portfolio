@@ -5,12 +5,13 @@ import Study from './Study'
 
 function Skills() {
   return (
-    <section className='text-white  flex flex-col mt-10 h-max space-y-8' id='skills'>
-        <span className='text-3xl font-bold border-white text-center border-b-2 w-max mx-auto'>Skills</span>
-        <div id='skill-details' >
-            <div className='text-center space-y-2'>
-              <span className='font-bold text-xl'>Frontend</span>
-              <div className='text-sm space-y-2'>
+    <section className='text-white  flex flex-col mt-10 h-max space-y-8 px-10' id='skills'>
+        <span className='text-3xl md:text-5xl font-bold border-white text-center border-b-2 w-max mx-auto'>Skills</span>
+        <div id='skill-details' className='md:flex md:flex-wrap'>
+            <div className='text-center space-y-2 md:w-[50%]'>
+              <img src="assets/img/frontend.png" className='w-[200px] h-[200px] md:w-[250px] md:h-[250px] storytell mx-auto' alt="" />
+              <span className='font-bold text-xl md:text-3xl'>Frontend</span>
+              <div className='text-sm md:text-lg space-y-2'>
                 <p className='mb-2'>
                   HTML5 & CSS
                   <br />
@@ -32,18 +33,19 @@ function Skills() {
               
             </div>
 
-            <div className='text-center mt-2 space-y-2'>
-              <span className='font-bold text-xl'>Soft skills</span>
-              <p className='text-sm'>
+            <div className='text-center mt-2 space-y-2 md:w-[50%] md:mx-auto'>
+              <img src="assets/img/soft-skills.png" className='w-[200px] h-[200px] md:w-[235px] md:h-[235px] storytell mx-auto' alt="" />
+              <span className='font-bold text-xl md:text-3xl'>Soft skills</span>
+              <p className='text-sm w-[60%] mx-auto md:text-lg'>
                 Ik werk graag in team waarbij we samen projecten kunnen realiseren en kennis kunnen delen. Ondanks dat ik graag in team werk kan ik ook perfect zelfstandig werken.
                 <br />
                 <br />
-                Ik ben sociaal en geef niet snel op bij problemen. Ik zal steeds doorzetten tot ik mijn doelen heb bereikt.
+                Ik ben sociaal en geef niet snel op bij problemen. Ik zet steeds door tot ik mijn doelen heb bereikt.
               </p>
             </div>
 
-            <div className='text-center mt-2 space-y-2'>
-              <span className='font-bold text-xl'>Vaardigheden</span>
+            <div className='text-center mt-8 space-y-2  md:w-[60%] md:mx-auto'>
+              <span className='font-bold text-xl md:text-3xl'>Vaardigheden</span>
               <div>
                 <div className="flex justify-between mb-1" style={{width: 100 + "%"}}>
                     <span className="text-base font-medium text-white">HTML5 & CSS</span>
@@ -108,15 +110,15 @@ function Skills() {
 
 
 
-        <span className='text-2xl border-white border-b-2 w-max pb-2'>Language</span>
+        <span className='text-2xl border-white border-b-2 w-max pb-2 md:w-[60%] md:mx-auto'>Talen</span>
         <div id='languages' className='space-y-4'>
             <Language language="Nederlands" progress="Moedertaal" value="100" />
             <Language language="Engels" progress="Erg goed" value="85" />
         </div>
 
-        <span className='text-2xl border-white border-b-2 w-max pb-2'>Studies</span>
-        <div id='studies' className='space-y-4'>
-            <Study school="Thomas More - Geel" degree="Bachelor Application Development" date="2019 - 2022" />
+        <span className='text-2xl border-white border-b-2 w-max pb-2 md:w-[60%] md:mx-auto'>Studies</span>
+        <div id='studies' className='space-y-4 md:w-[60%] md:mx-auto'>
+            <Study school="Thomas More - Geel" degree="Bachelor Application Development" date="2019 - Heden" />
             <Study school="Campos - Turnhout" degree="Kantoor" date="2012 - 2019" />
         </div>
     </section>

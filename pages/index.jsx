@@ -18,12 +18,17 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"></link>
       </Head>
 
-      <main className='bg-gray-800 px-10'>
+      <main className='bg-gray-800'>
         <Introduction />
-        <About />
+        <div className='bg-gray-700'>
+          <About />
+        </div>
+
         <Skills />
         <Projects />
-        <Stage />
+        <div className='bg-gray-700'>
+          <Stage />
+        </div>
       </main>
 
       <Footer />
