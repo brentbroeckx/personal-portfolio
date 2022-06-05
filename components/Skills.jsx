@@ -5,7 +5,7 @@ import Study from './Study'
 
 function Skills() {
   return (
-    <section className='text-white flex flex-col mt-10 h-max space-y-8' id='skills'>
+    <section className='text-white  flex flex-col mt-10 h-max space-y-8' id='skills'>
         <span className='text-3xl font-bold border-white text-center border-b-2 w-max mx-auto'>Skills</span>
         <div id='skill-details' >
             <div className='text-center space-y-2'>
