@@ -97,6 +97,11 @@ function renderDetailedProject(project) {
                         <p className='text-md font-bold'>Realisatiefase</p>
                         <p>{project.realisatiefase}</p>
                     </div>
+
+                    <div id='realisatiefase' className='md:w-[50%] md:mx-auto'>
+                        <p className='text-lg md:text-2xl font-bold underline text-orange-400'>Wat heb ik geleerd?</p>
+                        <p>{project.learned}</p>
+                    </div>
                 </div>
                 
             </div>
