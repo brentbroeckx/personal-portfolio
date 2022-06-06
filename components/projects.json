@@ -18,14 +18,31 @@
                             "/assets/img/city-influencers/webapp/tasks.PNG",
                             "/assets/img/city-influencers/webapp/taskdetail.PNG",
                             "/assets/img/city-influencers/webapp/FAQ.PNG", 
-                            "/assets/img/city-influencers/webapp/influencers.PNG"]
+                            "/assets/img/city-influencers/webapp/influencers.PNG"],
+        "projectVideo": "/assets/video/ci-promo-video.mp4"
     },
     {
         "id": 2,
         "title": "C# 3D Game Developer Course",
-        "location": "Thomas More - Geel",
+        "location": "Thomas More - Geel / Privé",
         "summary": "Lorem ipsum lorem ipsum",
-        "image": "/assets/img/creativity.jpg"
+        "image": "/assets/img/creativity.jpg",
+        "backgroundInfo": "Als extra cursus buiten Thomas More heb ik een 3D Game Development Cursus gevolgd om mijn C# kennis te verbeteren, bij te leren over 3D Game Development en de AI (Breadth First Search) die gebruikt zal worden in de projecten.",
+        "what": "In deze cursus heb ik 4 spellen gemaakt van een simpel naar een meer uitgebreid spel. Het eerste spel leerden we de physics en basis functionaliteiten van Unity, in het tweede spel maakten we een 3D Air Shooter waarbij we leerden gebruik maken van de Timeline in Unity om events plaatst te laten vinden op bepaalde momenten in het spel. In het derde spel pasten we AI toe en in het 4de spel combineerden we alle kennis en gebruikten we de AI pathfinding van Unity en leerden we verschillende scripts gebruiken om met elkaar te communiceren zoals bij het oprapen van een powerup",
+        "how": "Allereerst maakten we een demo project om te leren werken met Unity. Hier maakte we een parking zodat je allerlei objecten kon gebruiken en kijken hoe deze eruit zien. Na dit demo project maakten we nog een demo project om basis bewegingen te gebruiken waarbij we een bal naar elke kant konden laten bewegen en we een klein parcour konden afleggen.",
+        "title1": "Project Boost",
+        "title1Text": "In het eerste spel heb ik geleerd om te werken met de physics van Unity. Hierbij maakte ik een raket waar je mee kon vliegen, obstakels moest vermijden en het einde van levels halen voor naar het volgende level te gaan. In het eerste spel leer je alle basis onderdelen van Unity en zijn mogelijkheden.",
+        "title2": "Argon Assault",
+        "title2Text": "In het 2de spel leerde ik werken met de timeline van Unity om bepaalde dingen te laten gebeuren op bepaalde momenten in het spel. Hiermee kon ik maken dat een ruimteschip vliegt doorheen het gebied en dat er op de juiste momenten tegenstanders komen waarop je kan schieten. Voor het doden van een vijand krijg je punten.",
+        "title3": "Realm Rush",
+        "title3Text": "In het 3de spel gebruikte ik de geleerde kennis en voegde ik AI toe in de vorm van een Tower Defence spel. In dit spel plaats je torens die de vijanden zullen vermoorden. De vijanden zullen altijd het beste pad nemen naar jouw kasteel toe door middel van AI (Bread First Search). Het doel is om er voor te zorgen dat ze niet in jouw kasteel komen.",
+        "title4": "Zombie Runner",
+        "title4Text": "In het 4de spel gebruikte ik alles wat ik geleerd had en maakten ik een spel waarbij je door een level moet lopen en zombies kan vermoorden. De zombies zullen je van een bepaalde afstand zien en naar je toe komen door middel van Unity Pathfinding AI. Als zombies je raken zie je dit gebeuren op je scherm en na een aantal slagen zal je ook dood gaan en moet je opnieuw beginnen. Verder heb je enkele 'pickups' in het spel waarbij je kogels bijvullen en heb je een zaklamp die je steeds weer kunt vullen.",
+        "usedTools": "Unity, C#, AI",
+        "projectPictures": "",
+        "title2Video": "/assets/video/Argon-Assault.mp4",
+        "title3Video": "/assets/video/Realm-Rush.mp4",
+        "title4Video": "/assets/video/Zombie-Runner.mp4"
     },
     {
         "id": 3,

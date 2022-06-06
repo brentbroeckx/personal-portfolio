@@ -18,10 +18,6 @@ function NavLink({ href, exact, children, ...props }) {
 
     const isActive = exact ? asPath === href : asPath.includes(href);
 
-    console.log(asPath)
-    console.log(href)
-
-
     if (isActive) {
         if (props.mobile) {
             props.className += ' bg-orange-400'; 

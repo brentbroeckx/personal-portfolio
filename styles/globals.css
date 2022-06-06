@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  scroll-padding: 65px;
+  scroll-padding: 75px;
 }
 
 html,
