@@ -24,7 +24,7 @@ function ProjectCard(props) {
                 <div className="back face z-20 bg-black text-white p-5">
                     <div className='flex flex-col space-y-4'>
                         <div className='flex flex-col'>
-                            <span className='text-base'>{props.project.title}</span>
+                            <span className='text-base text-orange-400'>{props.project.title}</span>
                             <span className='text-gray-300 text-sm'>{props.project.location}</span>
                         </div>
                         <div>
@@ -32,7 +32,7 @@ function ProjectCard(props) {
                         </div>
                         <div>
                             <Link href={"/project/" + props.project.id} >
-                                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                <button className="bg-transparent hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
                                     Lees meer
                                 </button>
                             </Link>
