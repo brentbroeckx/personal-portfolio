@@ -242,6 +242,16 @@ function renderNormalProject(project) {
                         </div>
                     </div>
                 }
+
+                <div className='space-y-4'>
+                {project.projectPictures.map((image, index) => {
+                    return (
+                        <img src={image} key={index} className='w-[300px] h-[200px] md:w-[800px] md:h-[400px] storytell mx-auto' alt="" />     
+                    )
+
+                })}
+                </div>
+
             </div>
         </div>
         
