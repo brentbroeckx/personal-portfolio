@@ -39,7 +39,8 @@
         "title4": "Zombie Runner",
         "title4Text": "In het 4de spel gebruikte ik alles wat ik geleerd had en maakten ik een spel waarbij je door een level moet lopen en zombies kan vermoorden. De zombies zullen je van een bepaalde afstand zien en naar je toe komen door middel van Unity Pathfinding AI. Als zombies je raken zie je dit gebeuren op je scherm en na een aantal slagen zal je ook dood gaan en moet je opnieuw beginnen. Verder heb je enkele 'pickups' in het spel waarbij je kogels bijvullen en heb je een zaklamp die je steeds weer kunt vullen.",
         "usedTools": "Unity, C#, AI",
-        "projectPictures": "",
+        "projectPictures": [],
+        "title1Video": "/assets/video/Rocket-Boost.mp4",
         "title2Video": "/assets/video/Argon-Assault.mp4",
         "title3Video": "/assets/video/Realm-Rush.mp4",
         "title4Video": "/assets/video/Zombie-Runner.mp4"
@@ -51,9 +52,10 @@
         "summary": "Lorem ipsum lorem ipsum",
         "image": "/assets/img/creativity.jpg",
         "backgroundInfo": "Als privé project ben ik bezig aan een Twitter clone. De gebruikte tools had ik voorbij zien komen in videos en wou deze graag leren door middel van een eigen project te maken.",
-        "what": "Dit project zal een Twitter clone zijn. Het zal er dus uitzien als Twitter en zal de meeste basis functionaliteiten bevatten. Momenteel ben ik bezig aan authenticatie met NextAuth. De volgende stap zullen de posts en reacties zijn die opgeslagen zullen worden met behulp van Firebase. Om alles states te beheren maak ik niet gebruik van Redux maar heb ik voor Recoil gekozen. Op deze manier kan ik meerdere manieren van state management leren.",
+        "what": "Dit project is een Twitter clone. Het ziet er dus uit als Twitter en bevat de meeste basis functionaliteiten. Momenteel ben ik bezig aan authenticatie met NextAuth. De volgende stap zullen de posts en reacties zijn die opgeslagen zullen worden met behulp van Firebase. Om alles states te beheren maak ik niet gebruik van Redux maar heb ik voor Recoil gekozen. Op deze manier kan ik meerdere manieren van state management leren.",
         "how": "Ik heb eerst de layout in orde gebracht alvorens ik de nieuwe functionaliteiten zou bijleren. Als de layout klaar is was kon ik stapsgewijs de documentaties doornemen van Firabase, NextAuth en Recoil wanneer ik deze moet gebruiken. Voor dit project heb ik een stappenplan gemaakt. Eerst zal ik Recoil leren omdat ik dit overal nodig ga hebben. Wanneer ik deze kennis heb zal ik pas verder gaan met het leren van NextAuth en Firebase. Dit zorgt ervoor dat ik steeds kan focussen op 1 tool.",
         "projectPicture": "/assets/img/Twitter-clone.PNG",
+        "projectPictures": [],
         "usedTools": "React/NextJS, TailwindCSS, Firabase, NextAuth, Recoil"
     },
     {

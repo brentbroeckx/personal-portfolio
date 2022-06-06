@@ -9,6 +9,7 @@ function Footer() {
             </button>
         </a>
         <p className='text-sm text-gray-400'>Copyright © Brent Broeckx 2022</p>
+        <p className='text-sm text-gray-400'>Image Source https://www.freepik.com/</p>
     </div>
   )
 }

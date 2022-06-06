@@ -30,7 +30,7 @@ function About() {
                   </button>
                 </a>
 
-                <a href="assets/cv.pdf" target="_blank">
+                <a href="assets/cv.pdf" target="_blank" rel="noreferrer">
                   <button className="bg-blue-400 w-[160px] hover:bg-blue-600 text-gray-800 font-bold py-2 px-4 flex justify-center rounded items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
