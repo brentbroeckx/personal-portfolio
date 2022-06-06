@@ -184,7 +184,15 @@ function renderNormalProject(project) {
                     </div>
                 }
 
-                    <div className='space-y-4'>
+                {project.learned != null && 
+                <div id='realisatiefase' className='md:w-[50%] md:mx-auto'>
+                    <p className='text-lg md:text-2xl font-bold underline text-orange-400'>Wat heb ik geleerd?</p>
+                    <p>{project.learned}</p>
+                </div>
+                }
+
+
+                    <div className='space-y-4 mt-4'>
                             {project.projectPictures.map((image, index) => {
                                 return (
                                     <img src={image} key={index} className='w-[300px] h-[200px] md:w-[800px] md:h-[400px] storytell mx-auto' alt="" />     

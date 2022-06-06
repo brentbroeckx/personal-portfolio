@@ -52,11 +52,12 @@
         "location": "Privé",
         "summary": "Lorem ipsum lorem ipsum",
         "image": "/assets/img/creativity.jpg",
-        "backgroundInfo": "Als privé project ben ik bezig aan een Twitter clone. De gebruikte tools had ik voorbij zien komen in videos en wou deze graag leren door middel van een eigen project te maken.",
-        "what": "Dit project is een Twitter clone. Het ziet er dus uit als Twitter en bevat de meeste basis functionaliteiten. Momenteel ben ik bezig aan authenticatie met NextAuth. De volgende stap zullen de posts en reacties zijn die opgeslagen zullen worden met behulp van Firebase. Om alles states te beheren maak ik niet gebruik van Redux maar heb ik voor Recoil gekozen. Op deze manier kan ik meerdere manieren van state management leren.",
-        "how": "Ik heb eerst de layout in orde gebracht alvorens ik de nieuwe functionaliteiten zou bijleren. Als de layout klaar is was kon ik stapsgewijs de documentaties doornemen van Firabase, NextAuth en Recoil wanneer ik deze moet gebruiken. Voor dit project heb ik een stappenplan gemaakt. Eerst zal ik Recoil leren omdat ik dit overal nodig ga hebben. Wanneer ik deze kennis heb zal ik pas verder gaan met het leren van NextAuth en Firebase. Dit zorgt ervoor dat ik steeds kan focussen op 1 tool.",
+        "backgroundInfo": "Als privé project heb ik een Twitter clone gemaakt. De gebruikte tools had ik voorbij zien komen in videos en wou deze graag leren door middel van een eigen project te maken.",
+        "what": "Dit project is een Twitter clone. Het ziet er dus uit als Twitter en bevat de meeste basis functionaliteiten. Het project bevat Authenticatie met NextAuth en maakt gebruik van de NoSQL database in Firebase om alle data en gebruikers op te slaan. Om alle states te beheren maak ik niet gebruik van Redux maar heb ik voor Recoil gekozen. Op deze manier kan ik meerdere manieren van state management leren.",
+        "how": "Ik heb eerst de layout in orde gebracht alvorens ik de nieuwe functionaliteiten zou bijleren. Als de layout klaar was kon ik stapsgewijs de documentaties doornemen van Firabase, NextAuth en Recoil wanneer ik deze moet gebruiken. Voor dit project heb ik een stappenplan gemaakt. Eerst heb ik Recoil state management geleerd omdat ik dit overal nodig ging hebben. Wanneer ik deze kennis had ging ik pas verder met het leren van NextAuth en Firebase. Dit zorgde ervoor dat ik steeds kon focussen op 1 tool.",
         "projectPictures": ["/assets/img/TwitterClone.png"],
-        "usedTools": "React/NextJS, TailwindCSS, Firabase, NextAuth, Recoil"
+        "usedTools": "React/NextJS, TailwindCSS, Firabase, NextAuth, Recoil",
+        "learned": "In dit project heb ik allemaal nieuwe tools geleerd. Mijn kennis in React was al goed en wou hier meer mee doen waardoor ik op NextJS ben gestuit. NextJS zorgt voor een extra laag features en optimalisatie en een andere routing dan React. Hierdoor heb ik leren optimalizeren en heb ik kennis opgedaan in server-side rendering. Ik een nieuwe state management tool geleerd namelijk Recoil en gebruik ik Firebase (NoSQL) om mijn data op te slaan. TailwindCSS heb ik eerder gebruikt waarbij dit project een mooie toevoeging was om extra kennis op te doen."
     },
     {
         "id": 4,
