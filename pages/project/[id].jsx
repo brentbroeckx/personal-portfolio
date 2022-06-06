@@ -55,6 +55,7 @@ console.log("testing")
 
                         return (
                         <button
+                        key={index}
                         type="button"
                         data-bs-target="#carouselExampleCaptions"
                         data-bs-slide-to={index}
@@ -76,7 +77,7 @@ console.log("testing")
                             classNames += "active ";
                         }
 
-                        return <div className={classNames}>
+                        return <div key={index} className={classNames}>
                                     <img
                                     src={image}
                                     height="550px"
