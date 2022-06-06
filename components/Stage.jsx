@@ -11,14 +11,14 @@ function Stage() {
 
           <p className='font-bold text-lg'>Wie?</p>
 
-          <p className='text-sm text-center space-y-2 space-x-2'>
-            In mijn laatste studiejaar heb ik gewerkt als een stagiair bij E.Care voor 3 maanden (Maart - Mei 2022). Tijdens mijn zoektocht naar een stageplaats kwam ik terecht bij E.Care die software maakt, verkoopt en
+          <p className='text-sm md:text-base text-center space-y-2 space-x-2'>
+            In mijn laatste studiejaar heb ik gewerkt als stagiair bij E.Care voor 3 maanden (Maart - Mei 2022). Tijdens mijn zoektocht naar een stageplaats kwam ik terecht bij E.Care die software maakt, verkoopt en
             implementeerd om de medische diensten te helpen.
           </p>
 
           <p className='font-bold text-lg'>Wat?</p>
 
-          <p className='text-sm text-center space-y-2 space-x-2'>
+          <p className='text-sm md:text-base text-center space-y-2 space-x-2'>
             Mijn taak binnen E.Care was om het lopende kiosk project verder te zetten en tot een goed einde te brengen. Hierbij kwam communicatie met een partner aan te pas (in het engels) en het veranderen van de UI en UX van de
             assessments (vragen). Omdat het lang wachten kan zijn op antwoorden en aanpassingen van de partner heb ik een 2de project gekregen. Dit project werd al snel mijn hoofdproject.
             Het tweede project was een clone van IFTTT. IFTTT (If This, Then That) is een populair platform waar je opeenvolgende acties kan laten uitvoeren als er een voorgaande actie gebeurd.
@@ -29,7 +29,7 @@ function Stage() {
 
           <p className='font-bold text-lg'>Resultaat</p>
 
-          <p className='text-sm text-center space-y-2 space-x-2'>
+          <p className='text-sm md:text-base text-center space-y-2 space-x-2'>
             In de 3 maanden hebben we het kiosk project tot een goed einde gebracht waarbij het nu aan de partner is om een live demo te plaatsten bij een klant. 
             
             Het IFTTT project is ook tot een goed einde gebracht waarbij alle functionaliteiten werkend zijn. Momenteel zit het project in de test fase.
