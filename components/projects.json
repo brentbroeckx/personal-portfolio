@@ -54,8 +54,7 @@
         "backgroundInfo": "Als privé project ben ik bezig aan een Twitter clone. De gebruikte tools had ik voorbij zien komen in videos en wou deze graag leren door middel van een eigen project te maken.",
         "what": "Dit project is een Twitter clone. Het ziet er dus uit als Twitter en bevat de meeste basis functionaliteiten. Momenteel ben ik bezig aan authenticatie met NextAuth. De volgende stap zullen de posts en reacties zijn die opgeslagen zullen worden met behulp van Firebase. Om alles states te beheren maak ik niet gebruik van Redux maar heb ik voor Recoil gekozen. Op deze manier kan ik meerdere manieren van state management leren.",
         "how": "Ik heb eerst de layout in orde gebracht alvorens ik de nieuwe functionaliteiten zou bijleren. Als de layout klaar is was kon ik stapsgewijs de documentaties doornemen van Firabase, NextAuth en Recoil wanneer ik deze moet gebruiken. Voor dit project heb ik een stappenplan gemaakt. Eerst zal ik Recoil leren omdat ik dit overal nodig ga hebben. Wanneer ik deze kennis heb zal ik pas verder gaan met het leren van NextAuth en Firebase. Dit zorgt ervoor dat ik steeds kan focussen op 1 tool.",
-        "projectPicture": "/assets/img/Twitter-clone.PNG",
-        "projectPictures": [],
+        "projectPictures": ["/assets/img/Twitter-clone.PNG"],
         "usedTools": "React/NextJS, TailwindCSS, Firabase, NextAuth, Recoil"
     },
     {
