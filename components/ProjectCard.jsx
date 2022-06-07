@@ -39,42 +39,28 @@ function ProjectCard(props) {
             id="card-container" 
             className='w-80 h-60'>
             <div id="card2" className='w-80 h-60'>
-                <div className="front face">
+                <div className="">
                     <div className='absolute top-0 z-20 left-0 bottom-0 flex items-end pl-5 pb-5 w-80 h-60 text-black'>
-                        <div className='flex flex-col'>
-                            <span className='text-base text-white'>{props.project.title}</span>
-                            <span className='text-gray-300 text-sm'>{props.project.location}</span>
+                        <div className='flex justify-between w-full'>
+                            <div className='flex flex-col'>
+                                <span className='text-base text-white'>{props.project.title}</span>
+                                <span className='text-gray-300 text-sm'>{props.project.location}</span>
+                            </div>
+                            <div className='flex justify-center items-end'>
+                                <Link href={"/project/" + props.project.id} >
+                                    <button className="mr-4 bg-transparent cursor-pointer w-max hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
+                                        Lees meer
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <img className='w-80 h-60 z-10 object-cover project' src={props.project.image}/>
-                </div>
-                <div className="back face z-20 bg-black text-white p-5">
-                    <div className='flex flex-col space-y-4'>
-                        <div className='flex flex-col'>
-                            <span className='text-base text-orange-400'>{props.project.title}</span>
-                            <span className='text-gray-300 text-sm'>{props.project.location}</span>
-                        </div>
-                        <div>
-                            <span className='text-base mt-3'>{truncate(props.project.what)}</span>
-                        </div>
-                        <div>
-                                <a href={"/project/" + props.project.id} className="bg-transparent cursor-pointer w-max hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
-                                    Lees meer
-                                </a>
-
-                            updated
-                            
-                        </div>
-                        
-
-                    </div>
+                    
                 </div>
             </div>
         </motion.div>
 
-        <Link href={"/project/" + props.project.id} className="py-4 px-2">
-			<span className="font-semibold text-white text-lg cursor-pointer">Probeer dit als andere niet werkt</span>
-		</Link>
 
     </div>
   )

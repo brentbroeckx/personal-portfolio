@@ -108,32 +108,8 @@ a {
   filter: brightness(0.4);
 }
 
-#card2 {
-  /* width: 100%;
-  height: 100%; */
-  /* margin: 10%; */
-  transform-style: preserve-3d;
-  transition: all .8s linear;
-  box-shadow: 5px 5px 15px rgba(0,0,0, .3);
-}
 
-#card2:hover {
-    transform: rotateY(-180deg);
-    box-shadow: -5px 5px 15px rgba(0,0,0, .3);
-}
 
-.face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-.back {
-  display: block;
-  transform: rotateY(180deg);
-  box-sizing: border-box;
-  opacity: .7;
-}
 
 .storytell {
   max-width: max-content;
