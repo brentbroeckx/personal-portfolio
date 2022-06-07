@@ -25,7 +25,7 @@ function Skills() {
                   <br />
                    .NET Core, ASP.NET
                    <br />
-                   Java Spring boot & Thymeleaf
+                   Java Spring Boot & Thymeleaf
                    <br />
                     Python
                 </p>

@@ -32,9 +32,9 @@ function ProjectCard(props) {
                         </div>
                         <div>
                             <Link href={"/project/" + props.project.id} >
-                                <button className="bg-transparent hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
+                                <p className="bg-transparent cursor-pointer w-max hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
                                     Lees meer
-                                </button>
+                                </p>
                             </Link>
                             
                         </div>
