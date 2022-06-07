@@ -48,6 +48,12 @@ function Skills() {
     } else {
       controls.start("hidden");
     }
+    console.log(inView)
+    if (skillsContentView) {
+      skillsContentControl.start("visible");
+    }else {
+      skillsContentControl.start("hidden");
+    }
 
     if (progressInView) {
       progressControls.start("visible");
@@ -55,11 +61,6 @@ function Skills() {
       progressControls.start("hidden");
     }
 
-    if (skillsContentView) {
-      skillsContentControl.start("visible");
-    }else {
-      skillsContentControl.start("hidden");
-    }
     
   }, [controls, progressControls, inView, progressInView]);
 
@@ -71,22 +72,21 @@ function Skills() {
           variants={styleStates}
           className='text-3xl md:text-5xl font-bold border-white text-center border-b-2 w-max mx-auto'>Skills</motion.span>
 
-        <div ref={ref} id='skill-details' className='md:flex md:flex-wrap'>
-            <div className='text-center space-y-2 md:w-[50%]'>
+        <div id='skill-details' className='md:flex md:flex-wrap '>
+            <div ref={ref} className='text-center space-y-2 md:w-[50%] h-[91vh]'>
               <motion.img 
-                ref={skillsContent}
-                animate={skillsContentControl}
+                animate={controls}
                 initial="hidden"
                 variants={delayedStyleState} 
                 src="assets/img/frontend.png" 
                 className='w-[200px] h-[200px] md:w-[250px] md:h-[250px] storytell mx-auto' alt="" />
               <motion.p 
-                animate={skillsContentControl}
+                animate={controls}
                 initial="hidden"
                 variants={delayedStyleState} 
                 className='font-bold text-xl md:text-3xl'>Frontend</motion.p>
               <motion.div 
-                animate={skillsContentControl}
+                animate={controls}
                 initial="hidden"
                 variants={delayedStyleState} 
                 className='text-sm md:text-lg space-y-2'>
@@ -97,7 +97,7 @@ function Skills() {
                   <br />
                   Bootstrap, TailwindCSS, Angular Material
                 </p>
-                <span className='font-bold'>Andere</span>
+                <span  className='font-bold'>Andere</span>
                 <p>
                   SQL & NoSQL 
                   <br />
@@ -113,18 +113,18 @@ function Skills() {
 
             <div className='text-center space-y-2 md:w-[50%]'>
               <motion.img 
-                animate={skillsContentControl}
+                animate={controls}
                 initial="hidden"
                 variants={reversedDelayedStyleState}
                 src="assets/img/soft-skills.png" 
                 className='w-[200px] h-[200px] md:w-[250px] md:h-[250px] storytell mx-auto' alt="" />
               <motion.p 
-                animate={skillsContentControl}
+                animate={controls}
                 initial="hidden"
                 variants={reversedDelayedStyleState}
                 className='font-bold text-xl md:text-3xl'>Soft skills</motion.p>
               <motion.div 
-                animate={skillsContentControl}
+                animate={controls}
                 initial="hidden"
                 variants={reversedDelayedStyleState} 
                 className='text-sm md:text-lg space-y-2'>
@@ -142,8 +142,9 @@ function Skills() {
                 animate={progressControls}
                 initial="hidden"
                 variants={styleStates}
+                ref={experience}
                 className='font-bold text-xl md:text-3xl'>Vaardigheden</motion.p>
-              <div ref={experience}>
+              <div >
                 <div className="flex justify-between mb-1" style={{width: 100 + "%"}}>
                     <span className="text-base font-medium text-white">HTML5 & CSS</span>
                     <span className="text-sm font-medium text-white">Zeer goed</span>
