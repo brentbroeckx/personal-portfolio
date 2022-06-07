@@ -1,15 +1,43 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const styleStates = {
+  visible: {translateX: 0, opacity: 1, transition: {duration: 1}},
+  hidden: {opacity: 0, translateX: -100, transition: {duration: 1}}
+}
+
+const reversedStyleStates = {
+  visible: {translateX: -100, opacity: 1, transition: {duration: 1}},
+  hidden: {opacity: 0, translateX: 0, transition: {duration: 1}}
+}
 
 
 function About() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+    
+  }, [controls, inView]);
+
   return (
     <section className='text-white  md:mx-14 px-10' id='about'>
       <div className='flex flex-col h-[93vh] md:flex-row justify-center items-center'>
-        <div className='text-center md:text-left md:w-[80%] lg:w-[60%]'>
+        <motion.div  
+          animate={controls}
+          initial="hidden"
+          variants={styleStates}       
+          className='text-center md:text-left md:w-[80%] lg:w-[60%]'>
+
           <span className='text-3xl md:text-5xl font-bold border-white w-max border-b-2'>Over mij</span>
-          <div id='about-text' className='mt-3 text-center md:text-lg md:text-left space-y-4 md:w-[80%] lg:w-[60%]'>
+          <div ref={ref}  id='about-text' className='mt-3 text-center md:text-lg md:text-left space-y-4 md:w-[80%] lg:w-[60%]'>
             <p>
               Mijn naam is Brent Broeckx. Ik ben een gemotiveerde Application Development student van Thomas More Geel.
             </p>
@@ -47,9 +75,13 @@ function About() {
                 </button>
             </Link>
           </div>
-        </div>
+        </motion.div>
         <div>
-          <img src="assets/img/about.png" className='hidden md:block md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] storytell' alt="" />
+          <motion.img 
+            animate={controls}
+            initial="hidden"
+            variants={reversedStyleStates} 
+            src="assets/img/about.png" className='hidden md:block md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] storytell' alt="" />
         </div>
       </div>
         

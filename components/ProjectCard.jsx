@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
+const styleStates = {
+  visible: {scale: 1, opacity: 1, transition: {duration: 1}},
+  hidden: {opacity: 0, scale: 0, transition: {duration: 1}}
+}
 function ProjectCard(props) {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+
+        if (inView) {
+        controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
+    
+    }, [controls,inView]);
 
     const truncate = (str) => {
         if (str == null) return;
@@ -9,8 +27,14 @@ function ProjectCard(props) {
     }
 
   return (
-    <div className="">
-        <div id="card-container" className='w-80 h-60'>
+    <div>
+        <motion.div 
+            animate={controls}
+            initial={"hidden"}
+            variants={styleStates}
+            ref={ref}  
+            id="card-container" 
+            className='w-80 h-60'>
             <div id="card2" className='w-80 h-60'>
                 <div className="front face">
                     <div className='absolute top-0 z-20 left-0 bottom-0 flex items-end pl-5 pb-5 w-80 h-60 text-black'>
@@ -43,7 +67,7 @@ function ProjectCard(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
 
     </div>
   )

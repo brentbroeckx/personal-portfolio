@@ -4,11 +4,21 @@ import projects from '../../components/projects.json'
 import Link from 'next/link'
 import Head from 'next/head'
 import Footer from '../../components/Footer'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
+const styleStates = {
+  visible: {translateX: 0, opacity: 1, transition: {duration: 1}},
+  hidden: {opacity: 0, translateX: -100}
+}
+
+const reversedStyleState = {
+  visible: {translateX: 0, opacity: 1, transition: {duration: 1}},
+  hidden: {opacity: 0, translateX: 100}
+}
 
 
 function Project() {
-    
     const router = useRouter();
     const query = router.query;
 
@@ -27,10 +37,6 @@ function Project() {
 
         title = project.title;
     }
-   
-    useEffect(() => {
-        require('tw-elements')
-    })
 
   return (
 
@@ -55,6 +61,7 @@ function Project() {
             <p className='text-xl md:text-3xl font-bold underline text-orange-400 text-center'>{title}</p>
             
             {render}
+
         </div>
 
         <Footer />
@@ -66,7 +73,9 @@ function renderDetailedProject(project) {
     return (
         <div className='space-y-4 md:text-lg text-center'>
 
-            <div className='md:flex md:flex-wrap md:space-y-4'>
+            <div
+                className='md:flex md:flex-wrap md:space-y-4'>
+
                 <img src="/assets/img/usedtools.png" className='w-[200px] h-[200px] md:w-[250px] md:h-[250px] storytell mx-auto' alt="" />
                 <div id="used-tools" className='md:w-[100%]'>
                     <p className='text-lg md:text-2xl font-bold underline text-orange-400'>Gebruikte tools</p>

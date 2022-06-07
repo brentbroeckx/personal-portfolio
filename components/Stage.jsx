@@ -1,10 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ProjectCard from './ProjectCard'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const styleStates = {
+  visible: {translateX: 0, opacity: 1, transition: {duration: 1}},
+  hidden: {opacity: 0, translateX: -100, transition: {duration: 1}}
+}
+
+const reversedStyleState = {
+  visible: {translateX: 0, opacity: 1, transition: {duration: 1}},
+  hidden: {opacity: 0, translateX: 100, transition: {duration: 1}}
+}
 
 function Stage() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden")
+    }
+    
+  }, [controls,inView]);
+
   return (
     <section className='text-white text-center mt-10 h-max space-y-8 pb-5 px-10 pt-10 md:flex md:items-center' id='stage'>
-      <div className='space-y-4 md:w-[50%]'>
+      <motion.div
+        animate={controls}
+        initial={"hidden"}
+        variants={styleStates}
+        ref={ref} 
+        className='space-y-4 md:w-[50%]'>
         <p className='text-4xl font-bold mx-auto w-max'>Stage</p>
         <div id='stage-showcase' className='space-y-4'>
           <h3 className='text-lg text-center' >Healthcare Web Application Development in Angular for E.care</h3>
@@ -19,7 +49,7 @@ function Stage() {
           <p className='font-bold text-lg'>Wat?</p>
 
           <p className='text-sm md:text-base text-center space-y-2 space-x-2'>
-            Mijn taak binnen E.Care was om het lopende kiosk project verder te zetten en tot een goed einde te brengen. Hierbij kwam communicatie met een partner aan te pas (in het engels) en het veranderen van de UI en UX van de
+            Mijn taak binnen E.Care was om het lopende kiosk project verder te zetten en tot een goed einde te brengen. Hierbij kwam communicatie met een partner aan te pas (in het Engels) en het veranderen van de UI en UX van de
             assessments (vragen). Omdat het lang wachten kan zijn op antwoorden en aanpassingen van de partner heb ik een 2de project gekregen. Dit project werd al snel mijn hoofdproject.
             Het tweede project was een clone van IFTTT. IFTTT (If This, Then That) is een populair platform waar je opeenvolgende acties kan laten uitvoeren als er een voorgaande actie gebeurd.
             Omdat bij E.Care alles zeer specifiek is kunnen we het online platform hier niet voor gebruiken.
@@ -37,8 +67,13 @@ function Stage() {
 
          
         </div>
-      </div>
-      <div className=' md:w-[50%] space-y-12'>
+      </motion.div>
+      <motion.div
+        animate={controls}
+        initial={"hidden"}
+        variants={reversedStyleState}
+        ref={ref} 
+        className=' md:w-[50%] space-y-12'>
         <img src="assets/img/ecare.png" className='h-[50px] md:h-[80px] storytell mx-auto' alt="" />
         <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 mx-auto'>
             <a href='/assets/documents/SamenvattingStage.pdf' target="_blank" rel="noreferrer" className='bg-gradient-to-t from-blue-600 to-cyan-400 rounded-full w-32 h-32 text-white flex justify-center items-center flex-col mx-auto'>
@@ -69,7 +104,7 @@ function Stage() {
               </p>
             </a>
           </div>
-      </div>
+      </motion.div>
     
     </section>
   )
