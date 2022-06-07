@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -10,11 +11,12 @@ const styleStates = {
 function ProjectCard(props) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
+    const navigate = useRouter();
 
     useEffect(() => {
 
         if (inView) {
-        controls.start("visible");
+            controls.start("visible");
         } else {
             controls.start("hidden");
         }
@@ -24,6 +26,11 @@ function ProjectCard(props) {
     const truncate = (str) => {
         if (str == null) return;
         return str.length > 10 ? str.substring(0, 125) + "..." : str;
+    }
+
+    const routeToProject = (id) => {
+        var url = "/project/" + id
+        navigate.push(url)
     }
 
   return (
@@ -56,9 +63,9 @@ function ProjectCard(props) {
                         </div>
                         <div>
                             <Link href={"/project/" + props.project.id} >
-                                <p className="bg-transparent cursor-pointer w-max hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
+                                <button onClick={() => routeToProject(props.project.id)} className="bg-transparent cursor-pointer w-max hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
                                     Lees meer
-                                </p>
+                                </button>
                             </Link>
                             
                         </div>

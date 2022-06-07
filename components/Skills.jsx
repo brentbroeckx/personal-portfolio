@@ -48,7 +48,7 @@ function Skills() {
     } else {
       controls.start("hidden");
     }
-    console.log(inView)
+    
     if (skillsContentView) {
       skillsContentControl.start("visible");
     }else {
