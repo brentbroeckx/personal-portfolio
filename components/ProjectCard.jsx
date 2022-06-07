@@ -28,10 +28,6 @@ function ProjectCard(props) {
         return str.length > 10 ? str.substring(0, 125) + "..." : str;
     }
 
-    const routeToProject = (id) => {
-        var url = "/project/" + id
-        navigate.push(url)
-    }
 
   return (
     <div>
@@ -62,9 +58,12 @@ function ProjectCard(props) {
                             <span className='text-base mt-3'>{truncate(props.project.what)}</span>
                         </div>
                         <div>
-                            <a href={"/project/" + props.project.id} className="bg-transparent cursor-pointer w-max hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
-                                Lees meer
-                            </a>
+                                <a href={"/project/" + props.project.id} className="bg-transparent cursor-pointer w-max hover:bg-orange-500 text-orange-400 font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
+                                    Lees meer
+                                </a>
+
+                            updated
+                            
                         </div>
                         
 
@@ -72,6 +71,10 @@ function ProjectCard(props) {
                 </div>
             </div>
         </motion.div>
+
+        <Link href={"/project/" + props.project.id} className="py-4 px-2">
+			<span className="font-semibold text-white text-lg cursor-pointer">Probeer dit als andere niet werkt</span>
+		</Link>
 
     </div>
   )
