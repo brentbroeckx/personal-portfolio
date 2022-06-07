@@ -14,7 +14,7 @@ function Navbar() {
 					<div className="flex space-x-7 md:justify-between">
 						<div className="flex items-center">
 							<Link href="/" className="py-4 px-2">
-								<span className="font-semibold text-white text-lg">Brent Broeckx</span>
+								<span className="font-semibold text-white text-lg cursor-pointer">Brent Broeckx</span>
 							</Link>
 						</div>
 						<div className="hidden md:flex items-center space-x-1 text-white h-[6vh]">

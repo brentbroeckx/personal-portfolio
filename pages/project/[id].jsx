@@ -49,6 +49,7 @@ function Project() {
                 </button>
             </Link>
             
+            <p className='text-xl md:text-3xl font-bold underline text-orange-400 text-center'>{project.title}</p>
             
             {render}
         </div>
@@ -61,6 +62,7 @@ function Project() {
 function renderDetailedProject(project) {
     return (
         <div className='space-y-4 md:text-lg text-center'>
+
             <div className='md:flex md:flex-wrap md:space-y-4'>
                 <img src="/assets/img/usedtools.png" className='w-[200px] h-[200px] md:w-[250px] md:h-[250px] storytell mx-auto' alt="" />
                 <div id="used-tools" className='md:w-[100%]'>

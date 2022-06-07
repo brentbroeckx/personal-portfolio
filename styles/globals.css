@@ -6,6 +6,12 @@ html {
   scroll-padding: 75px;
 }
 
+@media (min-width: 768px) {
+  html {
+      scroll-padding: 125px;
+  }
+}
+
 html,
 body {
   scroll-behavior: smooth;

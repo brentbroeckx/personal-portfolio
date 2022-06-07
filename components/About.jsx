@@ -6,7 +6,7 @@ import Image from 'next/image'
 function About() {
   return (
     <section className='text-white  md:mx-14 px-10' id='about'>
-      <div className='flex flex-col h-[94vh] md:flex-row justify-center items-center'>
+      <div className='flex flex-col h-[93vh] md:flex-row justify-center items-center'>
         <div className='text-center md:text-left md:w-[80%] lg:w-[60%]'>
           <span className='text-3xl md:text-5xl font-bold border-white w-max border-b-2'>Over mij</span>
           <div id='about-text' className='mt-3 text-center md:text-lg md:text-left space-y-4 md:w-[80%] lg:w-[60%]'>
