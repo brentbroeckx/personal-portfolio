@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 html {
-  scroll-padding: 75px;
+  scroll-padding: 50px;
 }
 
 @media (min-width: 768px) {
   html {
-      scroll-padding: 125px;
+      scroll-padding: 20px;
   }
 }
 
