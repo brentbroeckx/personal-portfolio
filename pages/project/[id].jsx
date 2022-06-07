@@ -16,6 +16,7 @@ function Project() {
 
 
     var render = "";
+    var title = "";
 
     if (project != null) {
         if (project.voorbereidingsFase != null) {
@@ -23,6 +24,8 @@ function Project() {
         } else {
             render = renderNormalProject(project);
         }
+
+        title = project.title;
     }
    
     useEffect(() => {
@@ -49,7 +52,7 @@ function Project() {
                 </button>
             </Link>
             
-            <p className='text-xl md:text-3xl font-bold underline text-orange-400 text-center'>{project.title}</p>
+            <p className='text-xl md:text-3xl font-bold underline text-orange-400 text-center'>{title}</p>
             
             {render}
         </div>
