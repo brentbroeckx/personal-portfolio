@@ -40,11 +40,11 @@
         "title4": "Zombie Runner",
         "title4Text": "In het 4de spel gebruikte ik alles wat ik geleerd had en maakten ik een spel waarbij je door een level moet lopen en zombies kan vermoorden. De zombies zullen je van een bepaalde afstand zien en naar je toe komen door middel van Unity Pathfinding AI. Als zombies je raken zie je dit gebeuren op je scherm en na een aantal slagen zal je ook dood gaan en moet je opnieuw beginnen. Verder heb je enkele 'pickups' in het spel waarbij je kogels bijvullen en heb je een zaklamp die je steeds weer kunt vullen.",
         "usedTools": "Unity, C#, AI",
-        "projectPictures": [],
         "title1Video": "/assets/video/Rocket-Boost.mp4",
         "title2Video": "/assets/video/Argon-Assault.mp4",
         "title3Video": "/assets/video/Realm-Rush.mp4",
-        "title4Video": "/assets/video/Zombie-Runner.mp4"
+        "title4Video": "/assets/video/Zombie-Runner.mp4",
+        "projectVideos": []
     },
     {
         "id": 3,
@@ -57,7 +57,8 @@
         "how": "Ik heb eerst de layout in orde gebracht alvorens ik de nieuwe functionaliteiten zou bijleren. Als de layout klaar was kon ik stapsgewijs de documentaties doornemen van Firabase, NextAuth en Recoil wanneer ik deze moet gebruiken. Voor dit project heb ik een stappenplan gemaakt. Eerst heb ik Recoil state management geleerd omdat ik dit overal nodig ging hebben. Wanneer ik deze kennis had ging ik pas verder met het leren van NextAuth en Firebase. Dit zorgde ervoor dat ik steeds kon focussen op 1 tool.",
         "projectPictures": ["/assets/img/TwitterClone.png"],
         "usedTools": "React/NextJS, TailwindCSS, Firabase, NextAuth, Recoil",
-        "learned": "In dit project heb ik allemaal nieuwe tools geleerd. Mijn kennis in React was al goed en wou hier meer mee doen waardoor ik op NextJS ben gestuit. NextJS zorgt voor een extra laag features en optimalisatie en een andere routing dan React. Hierdoor heb ik leren optimalizeren en heb ik kennis opgedaan in server-side rendering. Ik een nieuwe state management tool geleerd namelijk Recoil en gebruik ik Firebase (NoSQL) om mijn data op te slaan. TailwindCSS heb ik eerder gebruikt waarbij dit project een mooie toevoeging was om extra kennis op te doen."
+        "learned": "In dit project heb ik allemaal nieuwe tools geleerd. Mijn kennis in React was al goed en wou hier meer mee doen waardoor ik op NextJS ben gestuit. NextJS zorgt voor een extra laag features en optimalisatie en een andere routing dan React. Hierdoor heb ik leren optimalizeren en heb ik kennis opgedaan in server-side rendering. Ik een nieuwe state management tool geleerd namelijk Recoil en gebruik ik Firebase (NoSQL) om mijn data op te slaan. TailwindCSS heb ik eerder gebruikt waarbij dit project een mooie toevoeging was om extra kennis op te doen.",
+        "projectVideos": []
     },
     {
         "id": 4,
@@ -69,6 +70,42 @@
         "what": "In dit project heb ik een webapplicatie gemaakt met Laravel. Op de voorpagina kunt U uw percelen bekijken of werken toevoegen aan een perceel. De percelen tonen alle informatie op een gebruiksvriendelijke manier en zijn makkelijk te vinden aan de hand van zoek functies. ",
         "how": "In overleg met de betreffende persoon heb ik eerst een concept gemaakt waarbij ze konden zien hoe de webapp eruit zou zien. Op deze manier konden we steeds goed overleggen welke features de webapp moet bevatten en welke data opgeslagen moet worden. Na enkele keren overleggen hadden we een volledig schema van features en data die we nodig hadden. Stapsgewijs ben ik gaan programmeren en heb ik dagelijks een update gestuurd. Het project werd beheerd op Github waarbij ik aan versiebeheer kon doen.",
         "projectPictures": ["/assets/img/perceelbeheer.jpg", "/assets/img/perceeldetail.jpg"],
-        "usedTools": "PHP, Laravel, MySQL, Github"
+        "usedTools": "PHP, Laravel, MySQL, Github",
+        "projectVideos": []
+
+    },
+    {
+        "id": 5,
+        "title": "Angular Challenge",
+        "location": "Thomas More - Geel / Privé",
+        "summary": "Lorem ipsum lorem ipsum",
+        "image": "/assets/img/angular-challenge.png",
+        "backgroundInfo": "DotNET lab heeft voor Thomas More een Angular Challenge opgesteld waarbij verschillende teams een applicatie maakten. Na de deadline zouden er 3 winnaars gekozen worden. Voor deze challenge is ons team op de 2de plaats geindigd waarbij we zeer positieve feedback kregen op onze frontend en onze uitgebreide backend.",
+        "what": "De opdracht van de Angular Challenge was om een webshop te maken van sportartikelen zoals sportschoenen, kleding en voeding. Onze applicatie bevatte een voorpagina met alle artikelen. Tevens bevatte deze pagina paginatie, zoek functionaliteit en een sorteer mogelijkheid. Deze features zijn gebouwd in de API zodat de client geoptimaliseerd is en geen dingen ophaalt die de gebruiker nooit zal zien. De applicatie bevatte ook een detailpagina, een winkelmand pagina en een checkout procedure. Het inloggen gebeurde via JWT (JSON Web Token) en de API werd extra beveiligd door controles die uitgevoerd werden om te kijken of deze token van U is en dat deze nog geldig is. Zo konden we garanderen dat enkel jij dingen van jouw eigen account kunt zien.",
+        "how": "Als voorbereiding hadden we besloten om allemaal 1 pagina te ontwerpen in Figma. De pagina die je ontworpen had ging je ook programmeren. Zo konden we voorkomen dat er 2 mensen met dezelfde toepassing bezig zijn. Mijn taak was de detailpagina ontwerpen en programmeren. Omdat het bij sommige andere pagina's niet altijd even vlot ging ben ik na het afronden van mijn taak op verschillende pagina's gaan helpen. Zo heb ik geholpen aan de betaalpagina, de voorpagina (zoek/sorteer functionaliteit) en andere kleine toepassingen. Omdat we enkele functionaliteiten via de API gingen maken ben ik niet enkel met de Frontend bezig geweest maar heb ik ook in de API gewerkt.",
+        "learned": "In dit project heb ik veel bijgeleerd. Zo heb ik voor de eerste keer kennis gemaakt met Figma, Prisma en TailwindCSS. Omdat een collega hier al meer kennis over had ben ik hier snel in gegroeid. Het ontwerpen in Figma werd uitgelegd waardoor ik en mijn team meteen verder kon en we goede ontwerpen konden maken. Wanneer we aan het programmeren begonnen werd uitgelegd wat Prisma was en kregen we een voorbeeld te zien. Vervolgens had ik een taak in de backend waardoor ik beter met Prisma leerde werken en mee een goede API kon opzetten. Samen met mijn team hadden we beslist om TailwindCSS te gebruiken in plaats van Bootstrap. Dit was een leuke uitdaging omdat we enkel nog maar Bootstrap gebruikt hadden. Samen met de documentatie van TailwindCSS kon ik al snel de layout van een pagina maken. Sinds dit project gebruik ik voor bijna al mijn nieuwe projecten TailwindCSS omdat deze voor mij enkele voordelen biedt tegenover Bootstrap. Het is meer modern, makkelijker te gebruiken en aan te passen.",
+        "projectPictures": ["/assets/img/angular-challenge/homepage.PNG", 
+                            "/assets/img/angular-challenge/detailpage.PNG", 
+                            "/assets/img/angular-challenge/shoppingbag.PNG", 
+                            "/assets/img/angular-challenge/payment.PNG", 
+                            "/assets/img/angular-challenge/orders.PNG", 
+                            "/assets/img/angular-challenge/adminaddproduct.PNG", 
+                            "/assets/img/angular-challenge/login.PNG", 
+                            "/assets/img/angular-challenge/register.jpg"],
+        "usedTools": "Angular, Prisma, TailwindCSS",
+        "projectVideos": []
+
+    },
+    {
+        "id": 6,
+        "title": "Car Assistant App",
+        "location": "Thomas More - Geel / Privé",
+        "summary": "Lorem ipsum lorem ipsum",
+        "image": "/assets/img/carAssistant.jpg",
+        "backgroundInfo": "Dit is een team project van 2 personen. We hebben dit gemaakt voor het vak Mobile Development and AR.",
+        "what": "Omdat we beide van auto's houden hebben we een app gemaakt waarbij je een auto kan scannen. Na het scannen zal er meer informatie getoond worden over deze auto en heb je de mogelijkheid om deze als favoriet aan te duiden en commentaar achter te laten voor als een andere gebruiker deze auto ook zou scannen. Zo kunnen we een mening delen met anderen over auto's.",
+        "how": "Omdat we met 2 aan dit project hebben gewerkt hebben we elkaar een apart taak gegeven. Mijn collega zou meer voor de frontend van de applicatie zorgen waarbij ik de taak had genomen om het AR gedeelte in orde te krijgen. Hiervoor heb ik veel foto's genomen van bepaalde auto's die ik vervolgens kon gebruiken in Wikitude om een bestand te genereren die via Wikitude AI herkent naar welke auto je kijkt. Om het scannen van de auto en de objecten die erbij getoond worden werkend te krijgen heb ik een Javascript bestand moeten maken die gelinkt werd met de API van wikitude. Dit bestand was een leuke uitdaging omdat het volledig nieuw was waarbij je veel features leerde kennen van AR.",
+        "usedTools": "Flutter, Wikitude AR",
+        "projectVideos": ["/assets/video/carAssistant.mp4", "/assets/video/carAssistantApp.mp4"]
     }
 ]

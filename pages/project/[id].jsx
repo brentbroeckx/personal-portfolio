@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Footer from '../../components/Footer'
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Carousel from '../../components/Carousel'
 
 const styleStates = {
   visible: {translateX: 0, opacity: 1, transition: {duration: 1}},
@@ -124,6 +125,14 @@ function renderDetailedProject(project) {
                 <source src={project.projectVideo} type="video/mp4" />
             </video>
 
+            {project.projectPictures && 
+                    <div>
+                        <Carousel images={project.projectPictures} />
+                    </div>
+            }
+
+
+
         </div>
         
         
@@ -131,7 +140,6 @@ function renderDetailedProject(project) {
 }
 
 function renderNormalProject(project) {
-
     return (
         <div className='space-y-4 md:text-lg text-center'>
             <div className='md:flex md:flex-wrap md:space-y-4'>
@@ -205,15 +213,22 @@ function renderNormalProject(project) {
                 </div>
                 }
 
+                <div className='space-y-4'>
+                    {project.projectVideos.map((video, index) => {
+                        return (
+                                <video key={index} className='mx-auto' width="800" height="400" controls>
+                                    <source src={video} type="video/mp4" />
+                                </video>
+                            )
+                        }) 
+                    }
+                </div>
 
-                    <div className='space-y-4 mt-4'>
-                            {project.projectPictures.map((image, index) => {
-                                return (
-                                    <img src={image} key={index} className='w-[300px] h-[200px] md:w-[800px] md:h-[400px] storytell mx-auto' alt="" />     
-                                )
-
-                            })}
+                {project.projectPictures && 
+                    <div>
+                        <Carousel images={project.projectPictures} />
                     </div>
+                }
 
             </div>
         </div>
