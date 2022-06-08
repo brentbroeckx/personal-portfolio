@@ -225,7 +225,7 @@ function renderNormalProject(project) {
                 </div>
 
                 {project.projectPictures && 
-                    <div>
+                    <div className='mt-4'>
                         <Carousel images={project.projectPictures} />
                     </div>
                 }
