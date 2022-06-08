@@ -73,7 +73,7 @@ function Skills() {
           className='text-3xl md:text-5xl font-bold border-white text-center border-b-2 w-max mx-auto'>Skills</motion.span>
 
         <div id='skill-details' className='md:flex md:flex-wrap '>
-            <div ref={ref} className='text-center space-y-2 md:w-[50%] h-[91vh]'>
+            <div ref={ref} className='text-center space-y-2 md:w-[50%]'>
               <motion.img 
                 animate={controls}
                 initial="hidden"
