@@ -36,7 +36,7 @@ function Language(props) {
             <motion.div 
                       animate={controls}
                       initial={"hidden"}
-                      variants={progressState(90, props.animDelay)}
+                      variants={progressState(props.value, props.animDelay)}
                       className="bg-gradient-to-r from-blue-600 to-cyan-400 h-3 rounded-full" style={{width: props.value + "%"}}></motion.div>
         </div>
       </div>
