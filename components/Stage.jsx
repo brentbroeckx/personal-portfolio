@@ -28,12 +28,12 @@ function Stage() {
   }, [controls,inView]);
 
   return (
-    <section className='text-white text-center mt-10 h-max space-y-8 pb-5 px-10 pt-10 md:flex md:items-center' id='stage'>
+    <section ref={ref}  className='text-white text-center mt-10 h-max space-y-8 pb-5 px-10 pt-10 md:flex md:items-center' id='stage'>
       <motion.div
         animate={controls}
         initial={"hidden"}
         variants={styleStates}
-        ref={ref} 
+        
         className='space-y-4 md:w-[50%]'>
         <p className='text-4xl font-bold mx-auto w-max'>Stage</p>
         <div id='stage-showcase' className='space-y-4'>
